@@ -1,4 +1,6 @@
 {
-  "python.pythonPath": "/usr/bin/env python3",
-  "editor.tabSize": 4
+  "editor.tabSize": 4,
+  "cSpell.words": [
+    "epassword"
+  ]
 }
