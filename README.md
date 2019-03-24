@@ -1,2 +1,2 @@
 # FunTools
-Personal CLI Tools written in Python just for fun!
+Personal CLI Tools just for fun and more productivity!
