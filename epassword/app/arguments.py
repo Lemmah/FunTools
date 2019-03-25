@@ -22,7 +22,12 @@ optional_ints = [
     ["-s", "--size", "length of the password"]
 ]
 
-description = "A CLI Utility to generate passwords on the fly!"
+description = """
+A CLI Utility to generate passwords on the fly!
+
+By Default, it generates: a 16 character long password
+-- using a combination of all characters.
+"""
 
 def argument_parser():
     """
