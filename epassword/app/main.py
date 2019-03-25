@@ -11,11 +11,11 @@ def main():
     default_properties = ["a", "d", "p"]
     password_properties = []
 
-    password_properties.append("a") if args.ascii else password_properties
-    password_properties.append("d") if args.digits else password_properties
-    password_properties.append("p") if args.punctuations else password_properties
-    password_properties.append("l") if args.lowercase else password_properties
-    password_properties.append("u") if args.uppercase else password_properties
+    if args.ascii: password_properties.append("a") 
+    if args.digits: password_properties.append("d") 
+    if args.punctuations: password_properties.append("p") 
+    if args.lowercase: password_properties.append("l") 
+    if args.uppercase: password_properties.append("u") 
 
     if not (args.ascii or args.digits or args.punctuations):
         password_properties = list(set(password_properties + default_properties))
@@ -24,6 +24,7 @@ def main():
     else Password(properties=password_properties)
 
     print(password)
+    if args.copy: print(password.copy())
 
     return 0
 

@@ -6,6 +6,7 @@ positional = []
 
 optional_flags = [
     ["-a", "--ascii", "ascii letters explicitly"],
+    ["-c", "--copy", "copy to cliboard"],
     ["-d", "--digits", "digits explicitly"],
     ["-p", "--punctuations", "punctuations explicitly"],
 ]

@@ -14,6 +14,5 @@ A radically easy to use password generator to save the day all those time we nee
     - letters
     - digits
     - symbols
-    - sql-friendly
 
 All these will come as commandline options. For now, focus is on working software above detailed documentation.

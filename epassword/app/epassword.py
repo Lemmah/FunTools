@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+from pyperclip import copy as pcopy
 from random import choice, randint
 from string import ascii_letters, digits, punctuation
 
@@ -26,5 +27,9 @@ class Password():
         password_range += punctuation if "p" in self.properties else ""
         return password_range
     
+    def copy(self):
+        pcopy(self.value)
+        return "copied to clipboard!"
+
     def __repr__(self):
         return self.value
