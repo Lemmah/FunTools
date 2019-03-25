@@ -15,18 +15,18 @@ class Password():
   
     @property
     def __char_range(self):
-        password_range = ""
-        password_range += ascii_letters if "a" in self.properties else ""
-        password_range += digits if "d" in self.properties else ""
-        password_range += punctuation if "p" in self.properties else ""
-        return password_range
+        char_range = ""
+        char_range += ascii_letters if "a" in self.properties else ""
+        char_range += digits if "d" in self.properties else ""
+        char_range += punctuation if "p" in self.properties else ""
+        return char_range
     
     @property
     def __value(self):
-        password = "".join(choice(self.__char_range) for c in range(self.length))
-        password = password.lower() if "l" in self.properties else password
-        password = password.upper() if "u" in self.properties else password
-        return password
+        value = "".join(choice(self.__char_range) for c in range(self.length))
+        value = value.lower() if "l" in self.properties else value
+        value = value.upper() if "u" in self.properties else value
+        return value
 
     def copy(self):
         pcopy(str(self))
